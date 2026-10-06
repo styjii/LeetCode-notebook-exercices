@@ -21,7 +21,6 @@ Chaque notebook contient l'énoncé complet en français, des exemples illustré
 - [Fonctionnement des tests](#fonctionnement-des-tests)
 - [Suivi de progression](#suivi-de-progression)
 - [Conseils](#conseils)
-- [Gestion avec Git](#gestion-avec-git)
 - [Licence](#licence)
 
 ---
@@ -46,7 +45,15 @@ Chaque notebook contient l'énoncé complet en français, des exemples illustré
 │   ├── 176-second_highest_salary.ipynb
 │   ├── 177-nth_highest_salary.ipynb
 │   ├── 178-rank_scores.ipynb
-│   └── 180-consecutive_numbers.ipynb
+│   ├── 180-consecutive_numbers.ipynb
+│   ├── 181-employees_earning_more_than_managers.ipynb
+│   ├── 182-duplicate_emails.ipynb
+│   ├── 183-customers_who_never_order.ipynb
+│   ├── 184-department_highest_salary.ipynb
+│   ├── 185-department_top_three_salaries.ipynb
+│   ├── 196-delete_duplicate_emails.ipynb
+│   ├── 197-rising_temperature.ipynb
+│   └── 262-trips_and_users.ipynb
 ├── LICENSE
 └── README.md
 ```
@@ -83,20 +90,37 @@ Dossier : [`LeetCode-Algo`](LeetCode-Algo)
 
 Dossier : [`LeetCode-SQLite`](LeetCode-SQLite)
 
-| N°  | Exercice                                                                      | Difficulté | Thèmes                                 | Notebook                                                                           |
-| --- | ----------------------------------------------------------------------------- | ---------- | -------------------------------------- | ---------------------------------------------------------------------------------- |
-| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)       | Facile     | Jointures                              | [175-combine_two_tables.ipynb](LeetCode-SQLite/175-combine_two_tables.ipynb)       |
-| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Moyen      | Sous-requêtes, valeurs `NULL`          | [176-second_highest_salary.ipynb](LeetCode-SQLite/176-second_highest_salary.ipynb) |
-| 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)       | Moyen      | Requête paramétrée, classements        | [177-nth_highest_salary.ipynb](LeetCode-SQLite/177-nth_highest_salary.ipynb)       |
-| 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/)                     | Moyen      | Fonctions de fenêtrage, classements    | [178-rank_scores.ipynb](LeetCode-SQLite/178-rank_scores.ipynb)                     |
-| 180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)     | Moyen      | Auto-jointures, fonctions de fenêtrage | [180-consecutive_numbers.ipynb](LeetCode-SQLite/180-consecutive_numbers.ipynb)     |
+| N°  | Exercice                                                                                                                | Difficulté | Thèmes                                         | Notebook                                                                                                         |
+| --- | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                 | Facile     | Jointures                                      | [175-combine_two_tables.ipynb](LeetCode-SQLite/175-combine_two_tables.ipynb)                                     |
+| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Moyen      | Sous-requêtes, valeurs `NULL`                  | [176-second_highest_salary.ipynb](LeetCode-SQLite/176-second_highest_salary.ipynb)                               |
+| 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)                                                 | Moyen      | Requête paramétrée, classements                | [177-nth_highest_salary.ipynb](LeetCode-SQLite/177-nth_highest_salary.ipynb)                                     |
+| 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/)                                                               | Moyen      | Fonctions de fenêtrage, classements            | [178-rank_scores.ipynb](LeetCode-SQLite/178-rank_scores.ipynb)                                                   |
+| 180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Moyen      | Auto-jointures, fonctions de fenêtrage         | [180-consecutive_numbers.ipynb](LeetCode-SQLite/180-consecutive_numbers.ipynb)                                   |
+| 181 | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Facile     | Auto-jointure                                  | [181-employees_earning_more_than_managers.ipynb](LeetCode-SQLite/181-employees_earning_more_than_managers.ipynb) |
+| 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Facile     | Regroupements, `HAVING`                        | [182-duplicate_emails.ipynb](LeetCode-SQLite/182-duplicate_emails.ipynb)                                         |
+| 183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Facile     | Jointures externes, `NOT IN`, `NOT EXISTS`     | [183-customers_who_never_order.ipynb](LeetCode-SQLite/183-customers_who_never_order.ipynb)                       |
+| 184 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/)                                   | Moyen      | Jointures, regroupements, sous-requêtes        | [184-department_highest_salary.ipynb](LeetCode-SQLite/184-department_highest_salary.ipynb)                       |
+| 185 | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)                           | Difficile  | Jointures, fonctions de fenêtrage              | [185-department_top_three_salaries.ipynb](LeetCode-SQLite/185-department_top_three_salaries.ipynb)               |
+| 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                                       | Facile     | Instruction `DELETE`, sous-requêtes            | [196-delete_duplicate_emails.ipynb](LeetCode-SQLite/196-delete_duplicate_emails.ipynb)                           |
+| 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Facile     | Dates, auto-jointure                           | [197-rising_temperature.ipynb](LeetCode-SQLite/197-rising_temperature.ipynb)                                     |
+| 262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Difficile  | Jointures multiples, agrégation conditionnelle | [262-trips_and_users.ipynb](LeetCode-SQLite/262-trips_and_users.ipynb)                                           |
 
 ### Particularités des notebooks SQL
 
 - **Exécution :** vous écrivez votre requête SQL dans la variable Python `requete`. Elle est exécutée sur une base **SQLite en mémoire**, créée par le notebook avec le module `sqlite3` de la bibliothèque standard de Python : aucune installation supplémentaire n'est nécessaire.
-- **Sécurité :** la base est ouverte en lecture seule pour votre requête (`PRAGMA query_only`) et une seule instruction SQL est acceptée.
+- **Sécurité :** pour les requêtes de lecture, la base est ouverte en lecture seule (`PRAGMA query_only`) et une seule instruction SQL est acceptée.
 - **Exercice 177 :** LeetCode demande de compléter une fonction MySQL. SQLite ne gérant pas les fonctions stockées, ce notebook demande une requête `SELECT` utilisant le **paramètre nommé `:N`** pour le rang demandé.
-- **Différences avec LeetCode :** LeetCode utilise MySQL pour ces exercices. Les constructions usuelles (jointures, `GROUP BY`, sous-requêtes, fonctions de fenêtrage) sont identiques, mais certains détails de syntaxe diffèrent (par exemple, MySQL n'accepte pas d'expression dans `LIMIT` / `OFFSET`, et le nom de colonne `rank` demande des accents graves). Les notebooks le signalent lorsque c'est pertinent.
+- **Exercice 196 :** il faut écrire une instruction **`DELETE`** (et non un `SELECT`). Le notebook exécute votre instruction sur une base modifiable, puis compare le **contenu final de la table** `Person` au contenu attendu.
+- **Exercice 197 :** SQLite stocke les dates en texte `AAAA-MM-JJ` et utilise des fonctions comme `date()` ou `julianday()`, alors que MySQL utilise `DATEDIFF`, `DATE_SUB` ou `INTERVAL`.
+- **Exercice 262 :** les types `ENUM` n'existent pas en SQLite ; ils sont remplacés par du texte avec une contrainte de valeurs. La division de deux entiers est entière en SQLite, il faut donc forcer un calcul décimal, puis arrondir à deux décimales.
+- **Différences avec LeetCode :** LeetCode utilise MySQL pour ces exercices. Les constructions usuelles (jointures, `GROUP BY`, sous-requêtes, fonctions de fenêtrage) sont identiques, mais certains détails de syntaxe diffèrent. Par exemple :
+  - MySQL n'accepte pas d'expression dans `LIMIT` / `OFFSET`, alors que SQLite l'accepte ;
+  - MySQL permet `DELETE p1 FROM ...` (suppression avec jointure), que SQLite ne comprend pas ;
+  - MySQL refuse une sous-requête sur la table en cours de suppression (erreur 1093), alors que SQLite l'accepte ;
+  - les noms de colonnes comme `rank` ou `Cancellation Rate` demandent des accents graves en MySQL.
+
+  Les notebooks le signalent lorsque c'est pertinent.
 
 ---
 
@@ -218,14 +242,18 @@ Ces détections reposent sur l'analyse du code source de votre méthode ; elles 
 
 ### Exercices SQL
 
-Votre requête est exécutée sur **plusieurs jeux de données** (cas courants, cas limites, tables vides, grands jeux de 1000 lignes). Les vérifications portent selon l'exercice sur :
+Votre requête est exécutée sur **plusieurs jeux de données** (cas courants, cas limites, tables vides, grands jeux de 1000 lignes ou plus). Les vérifications portent selon l'exercice sur :
 
-- le **nom et l'ordre des colonnes** du résultat ;
+- le **nom et l'ordre des colonnes** du résultat (la casse compte : `Email` n'est pas `email`) ;
 - les **lignes** retournées (manquantes ou en trop, doublons) ;
 - l'**ordre des lignes**, lorsque l'énoncé l'impose (exercice 178) ;
-- la présence d'une **ligne contenant `NULL`** lorsqu'aucune valeur n'existe (exercices 176 et 177).
+- la présence d'une **ligne contenant `NULL`** lorsqu'aucune valeur n'existe (exercices 176 et 177) ;
+- les **valeurs arrondies**, lorsque l'énoncé l'impose (exercices 178 et 262) ;
+- le **contenu final de la table** après exécution, pour l'exercice 196, qui demande un `DELETE`.
 
 En cas d'échec, la colonne _Détail_ explique ce qui ne va pas (par exemple, lignes manquantes, lignes en trop, colonnes incorrectes ou message d'erreur SQL).
+
+Les jeux de tests incluent des pièges classiques : doublons, égalités, valeurs `NULL`, jours manquants, utilisateurs bannis, bornes incluses ou exclues, homonymes. Une requête qui passe quelques exemples peut donc échouer sur un cas limite.
 
 ---
 
@@ -251,18 +279,28 @@ En cas d'échec, la colonne _Détail_ explique ce qui ne va pas (par exemple, li
 - [ ] 177 - Nth Highest Salary
 - [ ] 178 - Rank Scores
 - [ ] 180 - Consecutive Numbers
+- [ ] 181 - Employees Earning More Than Their Managers
+- [ ] 182 - Duplicate Emails
+- [ ] 183 - Customers Who Never Order
+- [ ] 184 - Department Highest Salary
+- [ ] 185 - Department Top Three Salaries
+- [ ] 196 - Delete Duplicate Emails
+- [ ] 197 - Rising Temperature
+- [ ] 262 - Trips and Users
 
 ---
 
 ## Conseils
 
 - **Commencez simple.** Une solution par force brute correcte vaut mieux qu'une solution optimisée incorrecte. Optimisez ensuite.
-- **Dessinez** le problème sur papier avant de coder, en particulier pour les exercices 2, 5, 6 et 10, ainsi que pour les exercices SQL de classement (177 et 178).
+- **Dessinez** le problème sur papier avant de coder, en particulier pour les exercices 2, 5, 6 et 10, ainsi que pour les exercices SQL de classement (177, 178 et 185).
 - **Testez vos requêtes SQL sur l'exemple** avant de lancer les tests complets : la cellule _Essai sur l'exemple_ est là pour cela.
+- **Pensez aux cas limites en SQL** : table vide, valeurs `NULL`, doublons, égalités, bornes d'une période. Les tests les vérifient.
 - **Renseignez la section Analyse** à chaque exercice : calculer la complexité de sa propre solution est l'un des meilleurs entraînements.
 - **Interrompez le noyau** (bouton d'arrêt) si l'exécution des tests dure trop longtemps : votre solution est probablement trop coûteuse pour les grandes entrées.
 - **Consultez les pistes une à une**, dans l'ordre, et seulement si nécessaire.
 - **Essayez plusieurs approches** pour un même exercice, notamment en SQL (jointure, sous-requête, fonction de fenêtrage) : chacune a ses avantages.
+- **Gardez en tête les différences avec MySQL** avant de soumettre une requête sur LeetCode : une requête valide ici peut devoir être adaptée.
 
 ---
 
